@@ -32,6 +32,7 @@ INNER JOIN TBL_AUTHOR A ON B.AuthorID = A.AuthorID;
 
 
 --Medium-Level Problem
+
 CREATE TABLE TBL_DEPARTMENT (
     DeptID INT PRIMARY KEY,
     DeptName VARCHAR(50)
