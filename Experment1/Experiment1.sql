@@ -73,5 +73,4 @@ WHERE DeptID IN (
     HAVING COUNT(CourseID) > 2
 );
 
-GRANT SELECT ON TBL_COURSE TO 'readonly_user';
 
