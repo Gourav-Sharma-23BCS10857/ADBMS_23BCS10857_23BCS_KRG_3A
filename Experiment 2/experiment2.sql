@@ -64,8 +64,15 @@ VALUES
 (7, 2020),
 (13, 2019);
 
-SELECT q.ID, q.YEAR, ISNULL(y.NPV, 0) AS NPV_Value
-FROM TBL_QUERY q
-LEFT JOIN TBL_YEAR y
-ON q.ID = y.ID AND q.YEAR = y.YEAR;
+SELECT 
+    q.ID, 
+    q.YEAR, 
+    IFNULL(y.NPV, 0) AS NPV_Value
+FROM 
+    TBL_QUERY q
+LEFT JOIN 
+    TBL_YEAR y
+ON 
+    q.ID = y.ID AND q.YEAR = y.YEAR;
+
 
